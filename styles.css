@@ -12,7 +12,7 @@ body {
 }
 
 h1,
-h2 {
+h2{
     font-size: 50px;
     padding: 20px;
 }
@@ -47,6 +47,13 @@ h2 {
     margin-top: 50px ;
   }
 
+  .large { font-size: 1.25rem; }
+
+.display-1 { 
+
+  text-transform: uppercase;
+}
+
   /* mainheader */
 
   #mainheader {
@@ -54,15 +61,31 @@ h2 {
     /* padding-top: 50px; */
   }
 
-  #mainheader .logo a {
+  #mainheader .brand a {
     color: #000;
   }
   
-  #mainheader .logo span {
+  #mainheader .brand span {
     color: #E84B2A;
   }
 
   /* navbar */
+
+  #mainnavbar .brand,
+#navbar .logo {
+  float: left;
+  padding-top: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+#mainheader .brand a {
+  color: #000;
+}
+
+#mainheader .brand span {
+  color: #eb9685;
+}
 
 #navbar {
     background: #E84B2A;
@@ -110,27 +133,73 @@ h2 {
     background-size: cover;
     height: 100vh;
     text-align: right;
-    padding-top: 50px;
-    padding-bottom: 90px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     color: #0c0c0c;
 }
 
-#showcase span {
+/* #showcase span {
     float: right;
-}
+} */
 
 #showcase p {
-    padding-top: 100px;
+    padding-top: 20px;
     text-align: right;
     color: black;
     font-size: 20px;
     font-weight: bold;
 }
 
+.showcase .btn{
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background: #000;
+  color: white;
+}
+
+/* about */
+
+#about {
+  height: 100%;
+  overflow: auto; 
+  padding-top: 200px;
+}
+
+#about h2 {
+  padding-bottom: 50px;
+}
+
+.text-right,
+.text-left {
+  float: none;
+width: 100%;
+padding-right: 0px;
+padding-left: 0px;
+}
+
+.text-left {
+  float: left;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.text-right {
+  float: right;
+  width: 50%;
+  padding-right: 40px;
+}
+
 /* services */
 
 #services h2 {
     padding-bottom: 50px;
+  }
+
+  .services-row img {
+    border-radius: 10px;
+
   }
   
   .card {
@@ -142,54 +211,77 @@ h2 {
   .card img {
     width: 100%;
     padding-bottom: 20px;
-    
+    border-radius: 10px;
   }
 
   .card img:hover {
     -webkit-transform:scale(1.1);transform:scale(1.1);
     transition: 1s;
 }
-  .card img {overflow:hidden;}
-  
-
-
-
-  .showcase .btn{
-    margin-top: 30px;
+  .card img {
+    overflow:hidden;
   }
 
-.btn:hover {
-    background: #000;
+  /* contact */
+
+  form {
     color: white;
+  }
+
+  form label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  
+  form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  form .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    background-color: #F2F3F6;
+    background-clip: padding-box;
+    border: 1px solid #F2F3F6;
+    border-radius: 0.25rem;
+  }
+
+  .contact-row {
+    border: solid white 3px;
+    padding: 5px;
+margin-bottom: 30px;
+  }
+
+  #contact {
+    height: 100vh;
+    padding-top: 20px;
+    background-color:  #E84B2A;
+  }
+  
+  #contact h2 {
+    padding-bottom: 20px;
+  }
+  
+  #contact form {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  #contact .btn {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  /* footer */
+#footer {
+  margin-top: 40px;
+  background: #6C757D;
+  text-align: center;
+  padding-top:40px;
+  height: 10vh;
 }
-
-
-#about {
-    height: 100%;
-    overflow: auto; 
-    padding-top: 150px;
-}
-
-#about h2 {
-    padding-bottom: 50px;
-  }
-
-  .text-right,
-  .text-left {
-    float: none;
-  width: 100%;
-  padding-right: 0px;
-  padding-left: 0px;
-  }
-
-  .text-left {
-    float: left;
-    width: 50%;
-    padding-right: 40px;
-  }
-
-  .text-right {
-    float: right;
-    width: 50%;
-    padding-right: 40px;
-  }
+  
